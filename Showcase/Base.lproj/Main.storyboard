@@ -79,14 +79,43 @@
                     <view key="view" contentMode="scaleToFill" id="7Ex-jA-eH5">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="NtR-6W-GvM">
+                                <rect key="frame" x="16" y="44" width="358" height="32"/>
+                                <segments>
+                                    <segment title="Alert"/>
+                                    <segment title="Action"/>
+                                </segments>
+                                <connections>
+                                    <action selector="performAction:" destination="XRn-15-nQO" eventType="valueChanged" id="c7Y-4U-0Mf"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mT6-bo-4AI">
+                                <rect key="frame" x="124" y="396" width="142" height="53"/>
+                                <state key="normal" title="Show Me"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="U9l-cI-ywi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NtR-6W-GvM" firstAttribute="trailing" secondItem="7Ex-jA-eH5" secondAttribute="trailingMargin" id="24O-c0-cp5"/>
+                            <constraint firstItem="NtR-6W-GvM" firstAttribute="top" secondItem="U9l-cI-ywi" secondAttribute="top" id="2NZ-09-WMh"/>
+                            <constraint firstItem="mT6-bo-4AI" firstAttribute="leading" secondItem="U9l-cI-ywi" secondAttribute="leading" constant="124" id="EaD-cY-R9S"/>
+                            <constraint firstItem="NtR-6W-GvM" firstAttribute="leading" secondItem="7Ex-jA-eH5" secondAttribute="leadingMargin" id="e7t-N3-dpS"/>
+                            <constraint firstItem="U9l-cI-ywi" firstAttribute="bottom" secondItem="mT6-bo-4AI" secondAttribute="bottom" constant="312" id="khl-El-l0N"/>
+                            <constraint firstItem="NtR-6W-GvM" firstAttribute="centerX" secondItem="mT6-bo-4AI" secondAttribute="centerX" id="m3S-fS-tMB"/>
+                            <constraint firstItem="mT6-bo-4AI" firstAttribute="centerY" secondItem="7Ex-jA-eH5" secondAttribute="centerY" id="rsv-4n-z36"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Action" image="Alert" id="yVm-I4-DWY"/>
+                    <connections>
+                        <outlet property="actionControl" destination="NtR-6W-GvM" id="a5x-Hv-FWP"/>
+                        <outlet property="showMeButton" destination="mT6-bo-4AI" id="e6H-i2-FJH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYy-E7-obm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1108" y="441"/>
+            <point key="canvasLocation" x="1107.6923076923076" y="440.75829383886253"/>
         </scene>
         <!--Slide It-->
         <scene sceneID="2gG-AG-nif">

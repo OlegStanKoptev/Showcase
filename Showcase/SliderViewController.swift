@@ -15,11 +15,19 @@ class SliderViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var greenValue: UITextField!
     @IBOutlet weak var blueValue: UITextField!
     @IBAction func changeRed(_ sender: Any) {
-        
+        redColor = CGFloat(redSlider.value)
+        redValue.text = String(format: "%.0f", redColor * 255.0)
+        UpdateColor()
     }
     @IBAction func changeGreen(_ sender: Any) {
+        greenColor = CGFloat(greenSlider.value)
+        greenValue.text = String(format: "%.0f", greenColor * 255.0)
+        UpdateColor()
     }
     @IBAction func changeBlue(_ sender: Any) {
+        blueColor = CGFloat(blueSlider.value)
+        blueValue.text = String(format: "%.0f", blueColor * 255.0)
+        UpdateColor()
     }
     
     var redColor: CGFloat = 1.0
@@ -36,6 +44,11 @@ class SliderViewController: UIViewController, UITextFieldDelegate {
     
     func UpdateColor() {
         self.view.backgroundColor = UIColor(red: redColor, green: greenColor, blue: blueColor, alpha: 1.0)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
 

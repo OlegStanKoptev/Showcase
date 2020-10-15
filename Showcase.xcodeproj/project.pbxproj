@@ -28,6 +28,7 @@
 		DCB452B32538E11F00353C7C /* TrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
 		DCB452B62538E12800353C7C /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
 		DCB452BC2538E35000353C7C /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
+		DCB452C32538F07C00353C7C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		DCB452912538E06300353C7C = {
 			isa = PBXGroup;
 			children = (
+				DCB452C32538F07C00353C7C /* README.md */,
 				DCB4529C2538E06300353C7C /* Showcase */,
 				DCB4529B2538E06300353C7C /* Products */,
 			);
@@ -63,8 +65,8 @@
 				DCB4529D2538E06300353C7C /* AppDelegate.swift */,
 				DCB4529F2538E06300353C7C /* SceneDelegate.swift */,
 				DCB452B32538E11F00353C7C /* TrackViewController.swift */,
-				DCB452B62538E12800353C7C /* ActionViewController.swift */,
 				DCB452BC2538E35000353C7C /* SliderViewController.swift */,
+				DCB452B62538E12800353C7C /* ActionViewController.swift */,
 				DCB452A32538E06300353C7C /* Main.storyboard */,
 				DCB452A62538E06600353C7C /* Assets.xcassets */,
 				DCB452A82538E06600353C7C /* LaunchScreen.storyboard */,
