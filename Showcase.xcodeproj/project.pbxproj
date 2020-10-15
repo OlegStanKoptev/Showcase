@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		DCB4529E2538E06300353C7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB4529D2538E06300353C7C /* AppDelegate.swift */; };
 		DCB452A02538E06300353C7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB4529F2538E06300353C7C /* SceneDelegate.swift */; };
-		DCB452A22538E06300353C7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB452A12538E06300353C7C /* ViewController.swift */; };
 		DCB452A52538E06300353C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB452A32538E06300353C7C /* Main.storyboard */; };
 		DCB452A72538E06600353C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB452A62538E06600353C7C /* Assets.xcassets */; };
 		DCB452AA2538E06600353C7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB452A82538E06600353C7C /* LaunchScreen.storyboard */; };
+		DCB452B42538E11F00353C7C /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB452B32538E11F00353C7C /* TrackViewController.swift */; };
+		DCB452B72538E12800353C7C /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB452B62538E12800353C7C /* ActionViewController.swift */; };
+		DCB452BD2538E35000353C7C /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB452BC2538E35000353C7C /* SliderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DCB4529A2538E06300353C7C /* Showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Showcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB4529D2538E06300353C7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCB4529F2538E06300353C7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DCB452A12538E06300353C7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DCB452A42538E06300353C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCB452A62538E06600353C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DCB452A92538E06600353C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCB452AB2538E06600353C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCB452B32538E11F00353C7C /* TrackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
+		DCB452B62538E12800353C7C /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		DCB452BC2538E35000353C7C /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				DCB4529D2538E06300353C7C /* AppDelegate.swift */,
 				DCB4529F2538E06300353C7C /* SceneDelegate.swift */,
-				DCB452A12538E06300353C7C /* ViewController.swift */,
+				DCB452B32538E11F00353C7C /* TrackViewController.swift */,
+				DCB452B62538E12800353C7C /* ActionViewController.swift */,
+				DCB452BC2538E35000353C7C /* SliderViewController.swift */,
 				DCB452A32538E06300353C7C /* Main.storyboard */,
 				DCB452A62538E06600353C7C /* Assets.xcassets */,
 				DCB452A82538E06600353C7C /* LaunchScreen.storyboard */,
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCB452A22538E06300353C7C /* ViewController.swift in Sources */,
 				DCB4529E2538E06300353C7C /* AppDelegate.swift in Sources */,
+				DCB452BD2538E35000353C7C /* SliderViewController.swift in Sources */,
 				DCB452A02538E06300353C7C /* SceneDelegate.swift in Sources */,
+				DCB452B72538E12800353C7C /* ActionViewController.swift in Sources */,
+				DCB452B42538E11F00353C7C /* TrackViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.koptev.Showcase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.koptev.Showcase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
