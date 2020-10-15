@@ -12,8 +12,8 @@ class TrackViewController: UIViewController, CLLocationManagerDelegate {
     var locationManager: CLLocationManager!
     @IBOutlet weak var locationText: UITextView!
     @IBOutlet weak var toggleSwitch: UISwitch!
-    
-    @IBAction func changeToggle(_ sender: Any) {
+    @IBAction func valueChanged(_ sender: Any) {
+        NSLog("Pressed switch")
         if toggleSwitch.isOn {
             if !CLLocationManager.locationServicesEnabled() {
                 self.toggleSwitch.isOn = false

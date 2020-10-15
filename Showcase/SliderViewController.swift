@@ -48,6 +48,7 @@ class SliderViewController: UIViewController, UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
+        UpdateColor()
         return true
     }
     
